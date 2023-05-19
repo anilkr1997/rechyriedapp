@@ -20,7 +20,7 @@ import '../Modelclass/PSSmastere/PSSmaster.dart';
 part 'ApiService.g.dart';
 
 
-@RestApi(baseUrl: "https://indiapowermap.gov.in/")
+@RestApi(baseUrl: "")
 abstract class ApiService {
   factory ApiService(Dio dio, {String? baseUrl}) {
     dio.options = BaseOptions(receiveTimeout: 60000, connectTimeout: 60000);
